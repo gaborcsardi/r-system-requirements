@@ -88,7 +88,7 @@ Both tests run with R 3.5.3 for all CRAN packages as of April 4, 2019.
 
 The rules in this catalog support the following operating systems:
 
-- Ubuntu 14.04, 16.04, 18.04, 20.04
+- Ubuntu 16.04, 18.04, 20.04
 - Debian 8, 9
 - CentOS 7, 8
 - Red Hat Enterprise Linux 7, 8
@@ -279,7 +279,6 @@ make update-sysreqs
 packages on supported OSs.
 
 Available tags:
-- `trusty` (Ubuntu 14.04)
 - `xenial` (Ubuntu 16.04)
 - `bionic` (Ubuntu 18.04)
 - `focal` (Ubuntu 20.04)
@@ -294,8 +293,8 @@ Available tags:
 To build the images:
 
 ```sh
-# Build a specific image (e.g. trusty)
-make build-trusty
+# Build a specific image (e.g. focal)
+make build-focal
 
 # Build all images
 make build-all
@@ -304,8 +303,8 @@ make build-all
 To test the rules:
 
 ```sh
-# Test a specific rule on an OS (e.g. trusty)
-make test-trusty RULES=rules/libcurl.json
+# Test a specific rule on an OS (e.g. focal)
+make test-focal RULES=rules/libcurl.json
 
 # Test a specific rule on all OSs
 make test-all RULES=rules/libcurl.json
